@@ -1,0 +1,1505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24BC653C8C37409D86CF3500 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F8A7B7B1BFF7450288D4CB31 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				8693D52342744C73AFCD55DA /* CMake Rules */,
+			);
+			dependencies = (
+				9B7688AF76C6482480F2685E /* PBXTargetDependency */,
+				4036612F4489422E947EA2D4 /* PBXTargetDependency */,
+				19B3D269B95744519DA27E76 /* PBXTargetDependency */,
+				4B1E178E07E6471587651A62 /* PBXTargetDependency */,
+				57EDEE354048487AA89352C9 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		5C6761E1685A4662BDC6A954 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4ADBC477EE1C493F91EFE489 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				F8B2631031DE4242A3B6F741 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		AD32292E4FCB421D8B5F79EB /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 89653893AE8847F680E13D63 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				04F16D04B8B54F3190F02516 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				724591C5F51A45CB9687BBC1 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		095481AE8FE9413DBF393B6F /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/mytools.cpp */ = {isa = PBXBuildFile; fileRef = 1C503EDA42C741DAAE705CFA /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/mytools.cpp */; };
+		13AA9DB6B6774B14AD4D3073 /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/mytools.h */ = {isa = PBXBuildFile; fileRef = 558943A75B7741FCBAE1E5D9 /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/mytools.h */; };
+		157FD203C51A460D8C535F16 /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 5D1AAA57C0A64A11B08BB1A7 /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/CMakeLists.txt */; };
+		22D33CF4AC84433C96069B11 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 31CC37109DC6413DAB9508B8 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/CMakeLists.txt */; };
+		292E9080B7C54A88AA41FA76 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = 09B1E2763FE340DD835DAAA9 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_joystick.m */; };
+		2AD8998E7A6A411B9F1FA33E /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/egl_context.h */ = {isa = PBXBuildFile; fileRef = 177A9C65B60E4A218C4E5923 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/egl_context.h */; };
+		30908D36BC654E20BD67729D /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/context.c */ = {isa = PBXBuildFile; fileRef = 7862E58D53F64C489DC71EE1 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		35C6613A1B734C0EA6A66E9D /* /Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/imgui_impl_opengl3.cpp */ = {isa = PBXBuildFile; fileRef = 9DD1AB9F81824EA4977B04E1 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/imgui_impl_opengl3.cpp */; };
+		396F4475FB1A4EAAA6D6E2B0 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/mappings.h */ = {isa = PBXBuildFile; fileRef = C8F3AE7926DD4A088DCB95CE /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/mappings.h */; };
+		3CD18F614AAC4D57A88840D1 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/egl_context.c */ = {isa = PBXBuildFile; fileRef = 29FCAFC048924C6B8EE0F36D /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/egl_context.c */; };
+		40772716727E45B8BF103BDE /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = C7D1F64A6880409796F60FD3 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_joystick.h */; };
+		41E0E2D2CEBA4EAFA0C7F97C /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/monitor.c */ = {isa = PBXBuildFile; fileRef = A449B622867C4EBD905A8148 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/monitor.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		44A728A3A7AE4D6585AC2431 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/internal.h */ = {isa = PBXBuildFile; fileRef = C37C762FF9FC491BB9492CE5 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/internal.h */; };
+		4AF997517B324F7DB07056D4 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glad/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 4DDA5F9163C24BA1881D85CB /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glad/CMakeLists.txt */; };
+		51AA968D10FA402FAF8C347F /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glad/src/glad.c */ = {isa = PBXBuildFile; fileRef = DBCE8AF0C0374EF9898D27B7 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glad/src/glad.c */; };
+		540420794EF648A686456239 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/osmesa_context.c */ = {isa = PBXBuildFile; fileRef = A6F8E32FA83343F4B2B3C55F /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/osmesa_context.c */; };
+		5FE1A54A2CDB41048FB90C8F /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = B1F63E585E1A400698E503B9 /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src/glfw_config.h */; };
+		6B1382F33AB24770881F1E22 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/init.c */ = {isa = PBXBuildFile; fileRef = E47F47ABE3DE44A198DDA5F8 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/init.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		6C3F2CD57C1C44E79DA5E4AB /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 2EC0769440714BFCA36A5C0E /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/main.cpp */; };
+		776A158F9B34441A86FE285F /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = D94398F6C4204D21AE955ABE /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_init.m */; };
+		797EE5D350DB4BEA915A8AEF /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/window.c */ = {isa = PBXBuildFile; fileRef = ACBC901062D24AF58657AFAE /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/window.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		7D76B38B942F48C5A08E5BF5 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/input.c */ = {isa = PBXBuildFile; fileRef = 8AF6E5C91AF049EAB1330CE9 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/input.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		81F63BACF638457BAFF29B1A /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = 594DD452A0DA49DF91AB601F /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_time.c */; };
+		8634802DE1E0461FB5575F3F /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/examples/imgui_impl_glfw.cpp */ = {isa = PBXBuildFile; fileRef = BA6AB00E7D9D4B39921810D6 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/examples/imgui_impl_glfw.cpp */; };
+		8844EF0AA7344AC2A98446A9 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = F91325D309DA4484ABCA96E0 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/CMakeLists.txt */; };
+		89EC97BB564B458180B8D0FF /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = 4B241850987E481F9484D4AC /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_window.m */; };
+		93357B3F2E804E188FF75ED5 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/osmesa_context.h */ = {isa = PBXBuildFile; fileRef = E92CDFBB10DC455AA24C494B /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/osmesa_context.h */; };
+		A0E9F042956C4FEC8DC2A118 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = DBCA7C7324284F35A446419E /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/vulkan.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		A41EE35C5C4746419F709106 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = 51F7F80DBA4B45A28047337A /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/nsgl_context.m */; };
+		A9582523102A4091A877DE8E /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/imgui_demo.cpp */ = {isa = PBXBuildFile; fileRef = 4BA8AE9E5DA04A9F83A379AE /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/imgui_demo.cpp */; };
+		AA37192931D74EE19A3DC3FB /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = 9B9F0DA280844DACBDFD9DE7 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include/GLFW/glfw3.h */; };
+		ACA6AAF05BFE420DB04EB50D /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/nanoflann.hpp */ = {isa = PBXBuildFile; fileRef = C6BB9C7D88F94095998F1922 /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/nanoflann.hpp */; };
+		C424389746574D119D65B628 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = 25FA719170884DB7BBE9AD19 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_monitor.m */; };
+		C4CD1D98A8134599958BEB32 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/imgui_draw.cpp */ = {isa = PBXBuildFile; fileRef = 63CF0B4F79E24DEAB1D66627 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/imgui_draw.cpp */; };
+		CAF361D73CF744CC98AC4B27 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = 277137F6D05242E18CBE85C9 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/nsgl_context.h */; };
+		CC45BC4086454DDEB130EF2E /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/posix_thread.h */ = {isa = PBXBuildFile; fileRef = A4AC06532FE541F294DCCF64 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/posix_thread.h */; };
+		D0EBF06142E647B588112170 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = D0EF417C8F624E559137827F /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include/GLFW/glfw3native.h */; };
+		DBF9CC91939D4170B8B7640E /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/imgui.cpp */ = {isa = PBXBuildFile; fileRef = 85BDB53CEBE54DBEBB62CAC2 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/imgui.cpp */; };
+		EFC6F30C9C654CC28E941120 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/posix_thread.c */ = {isa = PBXBuildFile; fileRef = 64DAAC00358A42948E1D91CB /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/posix_thread.c */; };
+		F0B7A94C710546959D25BEC3 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = ADE463C911604C5EB9D54369 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_platform.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		870B8B7E818742028B83ADDF /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		9DA42B0E4EBF44918F4F479B /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		ABB5060300EC46E884C8826F /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		E7EA9361AD374E2288161BDC /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		38D3162121FD440E8B100FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC36C7504194A239BABA8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C6761E1685A4662BDC6A954;
+			remoteInfo = ZERO_CHECK;
+		};
+		5D4006E5CBED4F19BAE2748F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC36C7504194A239BABA8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E3CAFD4C0E9475581B03E3C;
+			remoteInfo = glfw;
+		};
+		8BA117364639460393647EE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC36C7504194A239BABA8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE3B65EA97CE491ABFCEB8C0;
+			remoteInfo = glad;
+		};
+		9C175EC33B5F440ABD36AD56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC36C7504194A239BABA8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB4A0EA1C4584ABDBC71DE74;
+			remoteInfo = imgui;
+		};
+		A3930E7370F54ABE84BC852C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC36C7504194A239BABA8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C6761E1685A4662BDC6A954;
+			remoteInfo = ZERO_CHECK;
+		};
+		B06BECE8CDB843B69D0A5CB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC36C7504194A239BABA8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BC6521964D441A0A8003FF5;
+			remoteInfo = ICPAlgorithm_bin;
+		};
+		C9BC3F55B1AF49948E7EA342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC36C7504194A239BABA8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE3B65EA97CE491ABFCEB8C0;
+			remoteInfo = glad;
+		};
+		CE45A30129C642A48E63B494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC36C7504194A239BABA8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E3CAFD4C0E9475581B03E3C;
+			remoteInfo = glfw;
+		};
+		E5C5E63367494C4CAA078295 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC36C7504194A239BABA8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB4A0EA1C4584ABDBC71DE74;
+			remoteInfo = imgui;
+		};
+		E94E663DEBC343B9B011D1EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC36C7504194A239BABA8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE3B65EA97CE491ABFCEB8C0;
+			remoteInfo = glad;
+		};
+		F039BB0382C543A4A7A3A074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC36C7504194A239BABA8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24BC653C8C37409D86CF3500;
+			remoteInfo = ALL_BUILD;
+		};
+		F28F51C9C49C455AA2709D88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC36C7504194A239BABA8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E3CAFD4C0E9475581B03E3C;
+			remoteInfo = glfw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09B1E2763FE340DD835DAAA9 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = ../../../libigl/external/glfw/src/cocoa_joystick.m; sourceTree = SOURCE_ROOT; };
+		177A9C65B60E4A218C4E5923 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/egl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = egl_context.h; path = ../../../libigl/external/glfw/src/egl_context.h; sourceTree = SOURCE_ROOT; };
+		1C503EDA42C741DAAE705CFA /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/mytools.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mytools.cpp; path = mytools.cpp; sourceTree = SOURCE_ROOT; };
+		25FA719170884DB7BBE9AD19 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = ../../../libigl/external/glfw/src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		277137F6D05242E18CBE85C9 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = ../../../libigl/external/glfw/src/nsgl_context.h; sourceTree = SOURCE_ROOT; };
+		29FCAFC048924C6B8EE0F36D /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/egl_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = egl_context.c; path = ../../../libigl/external/glfw/src/egl_context.c; sourceTree = SOURCE_ROOT; };
+		2EC0769440714BFCA36A5C0E /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		31CC37109DC6413DAB9508B8 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "../../../libigl/external/libigl-imgui/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		3E683793940C4CFFB0712B9B /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4B241850987E481F9484D4AC /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = ../../../libigl/external/glfw/src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		4BA8AE9E5DA04A9F83A379AE /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/imgui_demo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_demo.cpp; path = ../../../libigl/external/imgui/imgui_demo.cpp; sourceTree = SOURCE_ROOT; };
+		4DDA5F9163C24BA1881D85CB /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glad/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = ../../../libigl/external/glad/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		51F7F80DBA4B45A28047337A /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = ../../../libigl/external/glfw/src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		558943A75B7741FCBAE1E5D9 /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/mytools.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mytools.h; path = mytools.h; sourceTree = SOURCE_ROOT; };
+		594DD452A0DA49DF91AB601F /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = ../../../libigl/external/glfw/src/cocoa_time.c; sourceTree = SOURCE_ROOT; };
+		5D1AAA57C0A64A11B08BB1A7 /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		63CF0B4F79E24DEAB1D66627 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/imgui_draw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_draw.cpp; path = ../../../libigl/external/imgui/imgui_draw.cpp; sourceTree = SOURCE_ROOT; };
+		64DAAC00358A42948E1D91CB /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/posix_thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_thread.c; path = ../../../libigl/external/glfw/src/posix_thread.c; sourceTree = SOURCE_ROOT; };
+		7862E58D53F64C489DC71EE1 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = ../../../libigl/external/glfw/src/context.c; sourceTree = SOURCE_ROOT; };
+		85BDB53CEBE54DBEBB62CAC2 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/imgui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui.cpp; path = ../../../libigl/external/imgui/imgui.cpp; sourceTree = SOURCE_ROOT; };
+		8AF6E5C91AF049EAB1330CE9 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = ../../../libigl/external/glfw/src/input.c; sourceTree = SOURCE_ROOT; };
+		991154A4BDB346BC89EFC41A /* ICPAlgorithm_bin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = ICPAlgorithm_bin; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9F0DA280844DACBDFD9DE7 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = ../../../libigl/external/glfw/include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		9DD1AB9F81824EA4977B04E1 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/imgui_impl_opengl3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_impl_opengl3.cpp; path = "../../../libigl/external/libigl-imgui/imgui_impl_opengl3.cpp"; sourceTree = SOURCE_ROOT; };
+		A449B622867C4EBD905A8148 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = ../../../libigl/external/glfw/src/monitor.c; sourceTree = SOURCE_ROOT; };
+		A4AC06532FE541F294DCCF64 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/posix_thread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_thread.h; path = ../../../libigl/external/glfw/src/posix_thread.h; sourceTree = SOURCE_ROOT; };
+		A6F8E32FA83343F4B2B3C55F /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/osmesa_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = osmesa_context.c; path = ../../../libigl/external/glfw/src/osmesa_context.c; sourceTree = SOURCE_ROOT; };
+		ACBC901062D24AF58657AFAE /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = ../../../libigl/external/glfw/src/window.c; sourceTree = SOURCE_ROOT; };
+		ADE463C911604C5EB9D54369 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = ../../../libigl/external/glfw/src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		B1F63E585E1A400698E503B9 /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = ../build/glfw/src/glfw_config.h; sourceTree = SOURCE_ROOT; };
+		BA6AB00E7D9D4B39921810D6 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/examples/imgui_impl_glfw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_impl_glfw.cpp; path = ../../../libigl/external/imgui/examples/imgui_impl_glfw.cpp; sourceTree = SOURCE_ROOT; };
+		C090AAAB6953437190CE6013 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37C762FF9FC491BB9492CE5 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = ../../../libigl/external/glfw/src/internal.h; sourceTree = SOURCE_ROOT; };
+		C6BB9C7D88F94095998F1922 /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/nanoflann.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = nanoflann.hpp; path = nanoflann.hpp; sourceTree = SOURCE_ROOT; };
+		C7C788CCD586427CAF566EF5 /* imgui */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libimgui.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7D1F64A6880409796F60FD3 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = ../../../libigl/external/glfw/src/cocoa_joystick.h; sourceTree = SOURCE_ROOT; };
+		C8F3AE7926DD4A088DCB95CE /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/mappings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mappings.h; path = ../../../libigl/external/glfw/src/mappings.h; sourceTree = SOURCE_ROOT; };
+		D0EF417C8F624E559137827F /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = ../../../libigl/external/glfw/include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		D94398F6C4204D21AE955ABE /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = ../../../libigl/external/glfw/src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		DBCA7C7324284F35A446419E /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = ../../../libigl/external/glfw/src/vulkan.c; sourceTree = SOURCE_ROOT; };
+		DBCE8AF0C0374EF9898D27B7 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glad/src/glad.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad.c; path = ../../../libigl/external/glad/src/glad.c; sourceTree = SOURCE_ROOT; };
+		E47F47ABE3DE44A198DDA5F8 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = ../../../libigl/external/glfw/src/init.c; sourceTree = SOURCE_ROOT; };
+		E92CDFBB10DC455AA24C494B /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/osmesa_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osmesa_context.h; path = ../../../libigl/external/glfw/src/osmesa_context.h; sourceTree = SOURCE_ROOT; };
+		EA723B7F951A46799E85CDD9 /* glad */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91325D309DA4484ABCA96E0 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = ../../../libigl/external/glfw/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3BB83FAF5CC24F818E16E28A /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				E0474491A0E843318FFE6517 /* Source Files */,
+				57205665604E403ABE77516B /* Header Files */,
+				F91325D309DA4484ABCA96E0 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		4D687E6FBBF84B178C277DE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				991154A4BDB346BC89EFC41A /* ICPAlgorithm_bin */,
+				EA723B7F951A46799E85CDD9 /* glad */,
+				C090AAAB6953437190CE6013 /* glfw */,
+				C7C788CCD586427CAF566EF5 /* imgui */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53367F4A85AC42D99B9E7B4F /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		57205665604E403ABE77516B /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1F63E585E1A400698E503B9 /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src/glfw_config.h */,
+				9B9F0DA280844DACBDFD9DE7 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include/GLFW/glfw3.h */,
+				D0EF417C8F624E559137827F /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include/GLFW/glfw3native.h */,
+				C7D1F64A6880409796F60FD3 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_joystick.h */,
+				ADE463C911604C5EB9D54369 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_platform.h */,
+				177A9C65B60E4A218C4E5923 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/egl_context.h */,
+				C37C762FF9FC491BB9492CE5 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/internal.h */,
+				C8F3AE7926DD4A088DCB95CE /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/mappings.h */,
+				277137F6D05242E18CBE85C9 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/nsgl_context.h */,
+				E92CDFBB10DC455AA24C494B /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/osmesa_context.h */,
+				A4AC06532FE541F294DCCF64 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/posix_thread.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		74174B42D9464438BED53E0C /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				83E734CE41DE4A4785572C98 /* Source Files */,
+				31CC37109DC6413DAB9508B8 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/CMakeLists.txt */,
+			);
+			name = imgui;
+			sourceTree = "<group>";
+		};
+		83E734CE41DE4A4785572C98 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA6AB00E7D9D4B39921810D6 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/examples/imgui_impl_glfw.cpp */,
+				85BDB53CEBE54DBEBB62CAC2 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/imgui.cpp */,
+				4BA8AE9E5DA04A9F83A379AE /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/imgui_demo.cpp */,
+				63CF0B4F79E24DEAB1D66627 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/imgui_draw.cpp */,
+				9DD1AB9F81824EA4977B04E1 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/imgui_impl_opengl3.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		96F3B8EA475242D08A77E0CD /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				558943A75B7741FCBAE1E5D9 /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/mytools.h */,
+				C6BB9C7D88F94095998F1922 /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/nanoflann.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		97E1E99BE30E4E24B3B0CEF6 /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				3BB83FAF5CC24F818E16E28A /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		AB3D7C0AA08D4D25871A82C5 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EC0769440714BFCA36A5C0E /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/main.cpp */,
+				1C503EDA42C741DAAE705CFA /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/mytools.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B03FAA89E0A3496DA624FF86 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBCE8AF0C0374EF9898D27B7 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glad/src/glad.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C611759F035D41CF80376DCF /* ICPAlgorithm_bin */ = {
+			isa = PBXGroup;
+			children = (
+				AB3D7C0AA08D4D25871A82C5 /* Source Files */,
+				96F3B8EA475242D08A77E0CD /* Header Files */,
+				5D1AAA57C0A64A11B08BB1A7 /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/CMakeLists.txt */,
+			);
+			name = ICPAlgorithm_bin;
+			sourceTree = "<group>";
+		};
+		E0474491A0E843318FFE6517 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D94398F6C4204D21AE955ABE /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_init.m */,
+				09B1E2763FE340DD835DAAA9 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_joystick.m */,
+				25FA719170884DB7BBE9AD19 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_monitor.m */,
+				594DD452A0DA49DF91AB601F /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_time.c */,
+				4B241850987E481F9484D4AC /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_window.m */,
+				7862E58D53F64C489DC71EE1 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/context.c */,
+				29FCAFC048924C6B8EE0F36D /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/egl_context.c */,
+				E47F47ABE3DE44A198DDA5F8 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/init.c */,
+				8AF6E5C91AF049EAB1330CE9 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/input.c */,
+				A449B622867C4EBD905A8148 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/monitor.c */,
+				51F7F80DBA4B45A28047337A /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/nsgl_context.m */,
+				A6F8E32FA83343F4B2B3C55F /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/osmesa_context.c */,
+				64DAAC00358A42948E1D91CB /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/posix_thread.c */,
+				DBCA7C7324284F35A446419E /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/vulkan.c */,
+				ACBC901062D24AF58657AFAE /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		EEFFA84F5ADA4C0FBC4666AE /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				B03FAA89E0A3496DA624FF86 /* Source Files */,
+				4DDA5F9163C24BA1881D85CB /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glad/CMakeLists.txt */,
+			);
+			name = glad;
+			sourceTree = "<group>";
+		};
+		F3CC0D7E5B894886948F9B97 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				53367F4A85AC42D99B9E7B4F /* CMake Rules */,
+				3E683793940C4CFFB0712B9B /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		FE4542D2584749FFA223BCB3 = {
+			isa = PBXGroup;
+			children = (
+				C611759F035D41CF80376DCF /* ICPAlgorithm_bin */,
+				F3CC0D7E5B894886948F9B97 /* ALL_BUILD */,
+				EEFFA84F5ADA4C0FBC4666AE /* glad */,
+				97E1E99BE30E4E24B3B0CEF6 /* GLFW3 */,
+				74174B42D9464438BED53E0C /* imgui */,
+				4D687E6FBBF84B178C277DE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BC6521964D441A0A8003FF5 /* ICPAlgorithm_bin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA292353DAC343BE9114A0F9 /* Build configuration list for PBXNativeTarget "ICPAlgorithm_bin" */;
+			buildPhases = (
+				55BDEDBEC5F0456F9A6F8724 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C10C150BAFA4722BBFB60E5 /* PBXTargetDependency */,
+				E8A2A84EFA134B2390A8D973 /* PBXTargetDependency */,
+				662EB770D4F94DE8B37CB06D /* PBXTargetDependency */,
+				85BD89C7B7F145E8BE6D8705 /* PBXTargetDependency */,
+			);
+			name = ICPAlgorithm_bin;
+			productName = ICPAlgorithm_bin;
+			productReference = 991154A4BDB346BC89EFC41A /* ICPAlgorithm_bin */;
+			productType = "com.apple.product-type.tool";
+		};
+		9E3CAFD4C0E9475581B03E3C /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73EA235534694571930B1D2D /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				95A086ED4E754089BA19D185 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = C090AAAB6953437190CE6013 /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DB4A0EA1C4584ABDBC71DE74 /* imgui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4705249AA7EC4161A06F8ECA /* Build configuration list for PBXNativeTarget "imgui" */;
+			buildPhases = (
+				A97C7909F490479D8F77AC48 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C066AD333D3452AB773120C /* PBXTargetDependency */,
+				C5597083C1CE4C7AA812984E /* PBXTargetDependency */,
+			);
+			name = imgui;
+			productName = imgui;
+			productReference = C7C788CCD586427CAF566EF5 /* imgui */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EE3B65EA97CE491ABFCEB8C0 /* glad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39BA99DC5074B77BFA45466 /* Build configuration list for PBXNativeTarget "glad" */;
+			buildPhases = (
+				C1363DBCC9EB4AC7A27EAD9D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glad;
+			productName = glad;
+			productReference = EA723B7F951A46799E85CDD9 /* glad */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEC36C7504194A239BABA8E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = E48274779C0D4275AFF52294 /* Build configuration list for PBXProject "ICPAlgorithm" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				9DA42B0E4EBF44918F4F479B /* Debug */,
+				E7EA9361AD374E2288161BDC /* Release */,
+				870B8B7E818742028B83ADDF /* MinSizeRel */,
+				ABB5060300EC46E884C8826F /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = FE4542D2584749FFA223BCB3;
+			projectDirPath = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src";
+			projectRoot = "";
+			targets = (
+				24BC653C8C37409D86CF3500 /* ALL_BUILD */,
+				7BC6521964D441A0A8003FF5 /* ICPAlgorithm_bin */,
+				5C6761E1685A4662BDC6A954 /* ZERO_CHECK */,
+				EE3B65EA97CE491ABFCEB8C0 /* glad */,
+				9E3CAFD4C0E9475581B03E3C /* glfw */,
+				DB4A0EA1C4584ABDBC71DE74 /* imgui */,
+				AD32292E4FCB421D8B5F79EB /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04F16D04B8B54F3190F02516 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build -f /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		161527400EAD4985BAD303B9 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		5F86E2B607AB41D8A2286DDF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		8693D52342744C73AFCD55DA /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build -f /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		EDDC6EFC52514C0DA63E00FF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F8B2631031DE4242A3B6F741 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build -f /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55BDEDBEC5F0456F9A6F8724 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3F2CD57C1C44E79DA5E4AB /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/main.cpp */,
+				095481AE8FE9413DBF393B6F /* /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src/mytools.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95A086ED4E754089BA19D185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776A158F9B34441A86FE285F /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_init.m */,
+				292E9080B7C54A88AA41FA76 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_joystick.m */,
+				C424389746574D119D65B628 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_monitor.m */,
+				81F63BACF638457BAFF29B1A /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_time.c */,
+				89EC97BB564B458180B8D0FF /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/cocoa_window.m */,
+				30908D36BC654E20BD67729D /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/context.c */,
+				3CD18F614AAC4D57A88840D1 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/egl_context.c */,
+				6B1382F33AB24770881F1E22 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/init.c */,
+				7D76B38B942F48C5A08E5BF5 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/input.c */,
+				41E0E2D2CEBA4EAFA0C7F97C /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/monitor.c */,
+				A41EE35C5C4746419F709106 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/nsgl_context.m */,
+				540420794EF648A686456239 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/osmesa_context.c */,
+				EFC6F30C9C654CC28E941120 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/posix_thread.c */,
+				A0E9F042956C4FEC8DC2A118 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/vulkan.c */,
+				797EE5D350DB4BEA915A8AEF /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97C7909F490479D8F77AC48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8634802DE1E0461FB5575F3F /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/examples/imgui_impl_glfw.cpp */,
+				DBF9CC91939D4170B8B7640E /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/imgui.cpp */,
+				A9582523102A4091A877DE8E /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/imgui_demo.cpp */,
+				C4CD1D98A8134599958BEB32 /* /Users/silviojin/compM080-compGV18-2019/libigl/external/imgui/imgui_draw.cpp */,
+				35C6613A1B734C0EA6A66E9D /* /Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/imgui_impl_opengl3.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1363DBCC9EB4AC7A27EAD9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51AA968D10FA402FAF8C347F /* /Users/silviojin/compM080-compGV18-2019/libigl/external/glad/src/glad.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19B3D269B95744519DA27E76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E3CAFD4C0E9475581B03E3C /* glfw */;
+			targetProxy = 5D4006E5CBED4F19BAE2748F /* PBXContainerItemProxy */;
+		};
+		1C10C150BAFA4722BBFB60E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE3B65EA97CE491ABFCEB8C0 /* glad */;
+			targetProxy = E94E663DEBC343B9B011D1EA /* PBXContainerItemProxy */;
+		};
+		4036612F4489422E947EA2D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB4A0EA1C4584ABDBC71DE74 /* imgui */;
+			targetProxy = 9C175EC33B5F440ABD36AD56 /* PBXContainerItemProxy */;
+		};
+		4B1E178E07E6471587651A62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BC6521964D441A0A8003FF5 /* ICPAlgorithm_bin */;
+			targetProxy = B06BECE8CDB843B69D0A5CB0 /* PBXContainerItemProxy */;
+		};
+		57EDEE354048487AA89352C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C6761E1685A4662BDC6A954 /* ZERO_CHECK */;
+			targetProxy = 38D3162121FD440E8B100FF2 /* PBXContainerItemProxy */;
+		};
+		662EB770D4F94DE8B37CB06D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E3CAFD4C0E9475581B03E3C /* glfw */;
+			targetProxy = F28F51C9C49C455AA2709D88 /* PBXContainerItemProxy */;
+		};
+		724591C5F51A45CB9687BBC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24BC653C8C37409D86CF3500 /* ALL_BUILD */;
+			targetProxy = F039BB0382C543A4A7A3A074 /* PBXContainerItemProxy */;
+		};
+		85BD89C7B7F145E8BE6D8705 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C6761E1685A4662BDC6A954 /* ZERO_CHECK */;
+			targetProxy = A3930E7370F54ABE84BC852C /* PBXContainerItemProxy */;
+		};
+		9B7688AF76C6482480F2685E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE3B65EA97CE491ABFCEB8C0 /* glad */;
+			targetProxy = 8BA117364639460393647EE2 /* PBXContainerItemProxy */;
+		};
+		9C066AD333D3452AB773120C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE3B65EA97CE491ABFCEB8C0 /* glad */;
+			targetProxy = C9BC3F55B1AF49948E7EA342 /* PBXContainerItemProxy */;
+		};
+		C5597083C1CE4C7AA812984E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E3CAFD4C0E9475581B03E3C /* glfw */;
+			targetProxy = CE45A30129C642A48E63B494 /* PBXContainerItemProxy */;
+		};
+		E8A2A84EFA134B2390A8D973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB4A0EA1C4584ABDBC71DE74 /* imgui */;
+			targetProxy = E5C5E63367494C4CAA078295 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		167D7EA50A5E4407AF64E941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src","/Users/silviojin/compM080-compGV18-2019/libigl/external/glad/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/.","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/..","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/../imgui/examples");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -fPIC    '-std=gnu++11'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names        -framework OpenGL  /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/imgui/Debug/libimgui.a /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src/Debug/libglfw3.a -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glad/Debug/libglad.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ICPAlgorithm_bin;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/cmake/../include","/Users/silviojin/compM080-compGV18-2019/libigl/cmake/../external/eigen");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		1DC950FC88E04A5FB897404F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		2AAFAEC42A9C469095653660 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		2C8EC23440A2404896E896F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/build";
+			};
+			name = Release;
+		};
+		35635F22CE594255B72A8483 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/external/glad/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3F9673422ECB42EEA7C69E87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/../imgui","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/.","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/..","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/../imgui/examples","/Users/silviojin/compM080-compGV18-2019/libigl/external/glad/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fPIC     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		453F859DB38F4166A9EBF962 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		48CDD2F29BA84245B0A9811A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4987BF8F0063400E810D94E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		5375C884935F4769A22740ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		5DD26BACD5A9466E8871A60A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6800DBA3275E4F6EBF58AFA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/external/glad/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC     ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		7291C1DA14F44218912C5589 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src","/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC    -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		8A2CA652EBEA405E81562013 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/external/glad/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC        -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8BBDD7C5744145AEA7E3CF25 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9AC2BD488BFF4F4B8615D66E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/external/glad/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		AE3A7586065945BCB54451CF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src","/Users/silviojin/compM080-compGV18-2019/libigl/external/glad/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/.","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/..","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/../imgui/examples");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -fPIC        -DNDEBUG '-std=gnu++11'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names        -framework OpenGL  /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/imgui/RelWithDebInfo/libimgui.a /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src/RelWithDebInfo/libglfw3.a -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glad/RelWithDebInfo/libglad.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ICPAlgorithm_bin;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/cmake/../include","/Users/silviojin/compM080-compGV18-2019/libigl/cmake/../external/eigen");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B0ED28DE8D434D53A1F393B5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src","/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC     -DNDEBUG -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B6158B8482B64E7B80045C86 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src","/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC        -DNDEBUG -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B745143218CA4A0896493E06 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B76FF7EB46324E9E9EECC616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/../imgui","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/.","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/..","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/../imgui/examples","/Users/silviojin/compM080-compGV18-2019/libigl/external/glad/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fPIC     ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		BD51C76021B54A829AA9770A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		BE055F11BFBC40D78BB1B030 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BF5986154D6043EA92F4F892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		C399652D5BEE41D4AACFB763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		CCDBA37E1EB3454688E805FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src","/Users/silviojin/compM080-compGV18-2019/libigl/external/glad/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/.","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/..","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/../imgui/examples");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -fPIC     -DNDEBUG '-std=gnu++11'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names        -framework OpenGL  /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/imgui/Release/libimgui.a /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src/Release/libglfw3.a -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glad/Release/libglad.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ICPAlgorithm_bin;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/cmake/../include","/Users/silviojin/compM080-compGV18-2019/libigl/cmake/../external/eigen");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		D2527F6C3E9B482EAE732B59 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/src","/Users/silviojin/compM080-compGV18-2019/libigl/external/glad/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/.","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/..","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/../imgui/examples");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -fPIC     -DNDEBUG '-std=gnu++11'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names        -framework OpenGL  /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/imgui/MinSizeRel/libimgui.a /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src/MinSizeRel/libglfw3.a -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo /Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glad/MinSizeRel/libglad.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ICPAlgorithm_bin;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/cmake/../include","/Users/silviojin/compM080-compGV18-2019/libigl/cmake/../external/eigen");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D86192282F3E4DC1957FEE89 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/../imgui","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/.","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/..","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/../imgui/examples","/Users/silviojin/compM080-compGV18-2019/libigl/external/glad/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fPIC        -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DB315B9FAF0D41A68DB4F842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/src","/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -fPIC     -DNDEBUG -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		E408BF6B7F8042CA9E91FDCE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/../imgui","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/.","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/..","/Users/silviojin/compM080-compGV18-2019/libigl/external/libigl-imgui/../imgui/examples","/Users/silviojin/compM080-compGV18-2019/libigl/external/glad/include","/Users/silviojin/compM080-compGV18-2019/libigl/external/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fPIC     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		EEAD038FAD624618B8F6E17D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/build";
+			};
+			name = MinSizeRel;
+		};
+		FD15E561A4D646328F71BF8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/silviojin/compM080-compGV18-2019/courseworks/ICP/build/build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4705249AA7EC4161A06F8ECA /* Build configuration list for PBXNativeTarget "imgui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B76FF7EB46324E9E9EECC616 /* Debug */,
+				3F9673422ECB42EEA7C69E87 /* Release */,
+				E408BF6B7F8042CA9E91FDCE /* MinSizeRel */,
+				D86192282F3E4DC1957FEE89 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4ADBC477EE1C493F91EFE489 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC950FC88E04A5FB897404F /* Debug */,
+				4987BF8F0063400E810D94E4 /* Release */,
+				48CDD2F29BA84245B0A9811A /* MinSizeRel */,
+				8BBDD7C5744145AEA7E3CF25 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		73EA235534694571930B1D2D /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7291C1DA14F44218912C5589 /* Debug */,
+				DB315B9FAF0D41A68DB4F842 /* Release */,
+				B0ED28DE8D434D53A1F393B5 /* MinSizeRel */,
+				B6158B8482B64E7B80045C86 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		89653893AE8847F680E13D63 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5986154D6043EA92F4F892 /* Debug */,
+				5375C884935F4769A22740ED /* Release */,
+				453F859DB38F4166A9EBF962 /* MinSizeRel */,
+				BE055F11BFBC40D78BB1B030 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A39BA99DC5074B77BFA45466 /* Build configuration list for PBXNativeTarget "glad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6800DBA3275E4F6EBF58AFA0 /* Debug */,
+				9AC2BD488BFF4F4B8615D66E /* Release */,
+				35635F22CE594255B72A8483 /* MinSizeRel */,
+				8A2CA652EBEA405E81562013 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DA292353DAC343BE9114A0F9 /* Build configuration list for PBXNativeTarget "ICPAlgorithm_bin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				167D7EA50A5E4407AF64E941 /* Debug */,
+				CCDBA37E1EB3454688E805FF /* Release */,
+				D2527F6C3E9B482EAE732B59 /* MinSizeRel */,
+				AE3A7586065945BCB54451CF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E48274779C0D4275AFF52294 /* Build configuration list for PBXProject "ICPAlgorithm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD15E561A4D646328F71BF8A /* Debug */,
+				2C8EC23440A2404896E896F3 /* Release */,
+				EEAD038FAD624618B8F6E17D /* MinSizeRel */,
+				2AAFAEC42A9C469095653660 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F8A7B7B1BFF7450288D4CB31 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C399652D5BEE41D4AACFB763 /* Debug */,
+				BD51C76021B54A829AA9770A /* Release */,
+				5DD26BACD5A9466E8871A60A /* MinSizeRel */,
+				B745143218CA4A0896493E06 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEC36C7504194A239BABA8E8 /* Project object */;
+}
