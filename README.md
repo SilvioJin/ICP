@@ -7,3 +7,4 @@ The project computes the ICP algorithm to achieve alignment.
 
 For details see : 3DGeometry_CW1.pdf
 
+![alt text](https://github.com/SilvioJin/ICP/blob/master/images/ICP%20alignment%20.png)
